@@ -42,13 +42,13 @@ client.on('message', message =>{
         message.channel.send('💀🙏⚰️🪦')
 
     }else if (command == 'giveaway'){
-        if(message.member.roles.cache.has('<@&872790088818516028>')){
-            message.channel.send('A giveaway has started in <#872807200937095208>! Go react with 🎉 to enter the   giveaway.')
+        if(message.member.roles.cache.has('872790088818516028')){
+            message.channel.send('A giveaway has started in <#872807200937095208>! Go react with 🎉 to enter the giveaway.')
         } else {
             message.channel.send("You don't have the right permissions to run this command!")
         }
         
-        
+
     }
 });
 
