@@ -39,7 +39,7 @@ client.on('message', message =>{
         message.channel.send('discord.gg/beef')
 
     }else if (command == 'rip'){
-        message.channel.send('💀🙏⚰️🪦')
+        message.channel.send('💀⚰️🪦')
 
     }else if (command == 'giveaway'){
         if(message.member.roles.cache.has('872790088818516028')){
