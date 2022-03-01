@@ -36,19 +36,20 @@ client.on('message', message =>{
         message.channel.send('discord.gg/etps');
 
     }else if (command == 'beef'){
-        message.channel.send('discord.gg/beef')
+        message.channel.send('discord.gg/beef');
 
     }else if (command == 'rip'){
-        message.channel.send('💀⚰️🪦')
+        message.channel.send('💀⚰️🪦');
 
     }else if (command == 'giveaway'){
         if(message.member.roles.cache.has('872790088818516028')){
-            message.channel.send('A giveaway has started in <#872807200937095208>! Go react with 🎉 to enter the giveaway.')
+            message.channel.send('A giveaway has started in <#872807200937095208>! Go react with 🎉 to enter the giveaway.');
         } else {
-            message.channel.send("You don't have the right permissions to run this command!")
+            message.channel.send("You don't have the right permissions to run this command!");
         }
         
-
+    }else if (command == 'random'){
+        message.channel.send(RandomInt(100));
     }
 });
 
