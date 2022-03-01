@@ -24,7 +24,7 @@ client.on('message', message =>{
         message.channel.send('https://www.youtube.com/channel/UC2ohNPILhIqXCLW9alK1TCQ');
 
     }else if (command == 'owner'){
-        message.channel.send('The owner of this server is @540937043186941972');
+        message.channel.send('The owner of this server is <@!540937043186941972>');
 
     }else if (command == 'hi'){
         message.channel.send("Hello! Welcome to Zinthum's Server!");
