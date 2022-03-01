@@ -39,7 +39,7 @@ client.on('message', message =>{
         message.channel.send('discord.gg/beef')
 
     }else if (command == 'rip'){
-        message.channel.send('💀💀💀')
+        message.channel.send('☠️💀🙏⚰️')
     }
 });
 
