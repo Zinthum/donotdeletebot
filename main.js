@@ -48,8 +48,6 @@ client.on('message', message =>{
             message.channel.send("You don't have the right permissions to run this command!");
         }
         
-    }else if (command == 'random'){
-        message.channel.send(Math.random(100));
     }
 });
 
