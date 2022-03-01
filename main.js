@@ -49,7 +49,7 @@ client.on('message', message =>{
         }
         
     }else if (command == 'random'){
-        message.channel.send(output.RandomInt(100));
+        message.channel.send(Math.random(100));
     }
 });
 
