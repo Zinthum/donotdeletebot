@@ -65,8 +65,8 @@ client.on('message', message =>{
     }else if (command == 'ig'){
         message.channel.send('https://www.instagram.com/zinthum_yt/')
         
-    }else if (command === 'reactionrole'){
-        client.commands.get('reactionrole').execute('message, args, Discord, client');
+    }else if (command == 'reactionrole'){
+        client.commands.get('reactionrole').execute(message, args, Discord, client);
     }
 });
 
