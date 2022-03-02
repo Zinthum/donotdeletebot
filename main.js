@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-const client = new Discord.Client({intents:["GUILDS","GUILD_MESSAGES"]});
+const client = new Discord.Client({partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 
 const prefix = '.';
 
@@ -53,6 +53,9 @@ client.on('message', message =>{
 
     }else if (command == 'ig'){
         message.channel.send('https://www.instagram.com/zinthum_yt/')
+        
+    }else if (command === 'reactionrole'){
+        client.commands.get('reactionrole').execute('message, args, Discord, client');
     }
 });
 
