@@ -1,7 +1,7 @@
 module.exports = {
     name: 'reactionrole',
     description: "Sets up a reaction role message!",
-    async execute(message, args, Discord, client) {
+    async execute(message, args, Discord, client){
         const channel = '<#877205506383573052>';
         const GiveawayRole = message.guild.roles.cache.find(role => role.name === "Giveaway");
         const PollRole = message.guild.roles.cache.find(role => role.name === "Poll");
@@ -26,11 +26,11 @@ module.exports = {
             if (user.bot) return;
             if (!reaction.message.guild) return;
 
-            if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.name === GiveawayEmoji) {
+            if (reaction.message.channel.id == channel){
+                if (reaction.emoji.name === GiveawayEmoji){
                     await reaction.message.guild.members.cache.get(user.id).roles.add(GiveawayRole);
                 }
-                if (reaction.emoji.name === PollEmoji) {
+                if (reaction.emoji.name === PollEmoji){
                     await reaction.message.guild.members.cache.get(user.id).roles.add(PollRole);
                 }
             } else {
@@ -46,11 +46,11 @@ module.exports = {
             if (user.bot) return;
             if (!reaction.message.guild) return;
  
-            if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.name === GiveawayEmoji) {
+            if (reaction.message.channel.id == channel){
+                if (reaction.emoji.name === GiveawayEmoji){
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(GiveawayRole);
                 }
-                if (reaction.emoji.name === PollEmoji) {
+                if (reaction.emoji.name === PollEmoji){
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(PollRole);
                 }
             } else {
