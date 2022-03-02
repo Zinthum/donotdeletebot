@@ -3,8 +3,8 @@ module.exports = {
     description: "Sets up a reaction role message!",
     async execute(message, args, Discord, client){
         const channel = '<#877205506383573052>';
-        const GiveawayRole = message.guild.roles.cache.find(role => role.name === <@&877205752165568614>);
-        const PollRole = message.guild.roles.cache.find(role => role.name === <@&939600919748804698>);
+        const GiveawayRole = message.guild.roles.cache.find(role => role.name === Giveaway);
+        const PollRole = message.guild.roles.cache.find(role => role.name === Poll);
 
         const GiveawayEmoji = '🌈';
         const PollEmoji = '🎲';
