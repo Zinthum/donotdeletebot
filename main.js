@@ -19,6 +19,40 @@ client.once('ready', () => {
     console.log("Zinthum's Bot is online!");
 });
 
+client.on("messageReactionAdd", async (reaction, member, guild, message) => {
+    if (reaction.message.partial) await reaction.message.fetch();
+  if (reaction.partial) await reaction.fetch();
+  if (member.bot) return;
+  if (!reaction.message.guild) return;
+  if (reaction.message.id === "id of bots message") {
+    if (reaction.emoji.name === "🌈") {
+      await reaction.message.guild.members.cache.get(member.id).roles.add("role ID");
+    }
+  }
+  if (reaction.message.id === "id of bots message") {
+    if (reaction.emoji.name === "🎲") {
+      await reaction.message.guild.members.cache.get(member.id).roles.add("role ID");
+    }
+  }
+});
+
+client.on("messageReactionRemove", async (reaction, user) => {
+  if (reaction.message.partial) await reaction.message.fetch();
+  if (reaction.partial) await reaction.fetch();
+  if (user.bot) return;
+  if (!reaction.message.guild) return;
+  if (reaction.message.id === "id of bots message") {
+    if (reaction.emoji.name === "🌈") {
+      await reaction.message.guild.members.cache.get(user.id).roles.remove("role id");
+    }
+  }
+  if (reaction.message.id === "id of bots message") {
+    if (reaction.emoji.name === "🎲") {
+      await reaction.message.guild.members.cache.get(user.id).roles.remove("role id");
+    }
+  } 
+});
+
 client.on('messageCreate', message =>{
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
@@ -69,11 +103,5 @@ client.on('messageCreate', message =>{
         client.commands.get('reactionrole').execute(message, args, Discord, client);
     }
 });
-
-
-
-
-
-
 
 client.login(process.env.token);
