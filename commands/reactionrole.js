@@ -26,12 +26,12 @@ module.exports = {
             if (user.bot) return;
             if (!reaction.message.guild) return;
 
-            if (reaction.message.id === "PUT MESSAGE ID OF EMBED HERE") {
+            if (reaction.message.id === "948693477166833754") {
                 if (reaction.emoji.name === GiveawayEmoji) {
                 await reaction.message.guild.members.cache.get(user.id).roles.add(GiveawayRole);
                 }
             }
-            if (reaction.message.id === "PUT MESSAGE ID OF EMBED HERE") {
+            if (reaction.message.id === "948693477166833754") {
                 if (reaction.emoji.name === PollEmoji) {
                 await reaction.message.guild.members.cache.get(user.id).roles.add(PollRole);
                 }
@@ -46,12 +46,12 @@ module.exports = {
             if (user.bot) return;
             if (!reaction.message.guild) return;
  
-            if (reaction.message.id === "PUT MESSAGE ID OF EMBED HERE") {
+            if (reaction.message.id === "948693477166833754") {
                 if (reaction.emoji.name === GiveawayEmoji) {
                 await reaction.message.guild.members.cache.get(user.id).roles.remove(GiveawayRole);
                 }
             }
-            if (reaction.message.id === "PUT MESSAGE ID OF EMBED HERE") {
+            if (reaction.message.id === "948693477166833754") {
                 if (reaction.emoji.name === PollEmoji) {
                 await reaction.message.guild.members.cache.get(user.id).roles.remove(PollRole);
                 }
