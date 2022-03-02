@@ -16,7 +16,7 @@ module.exports = {
                 + `${GiveawayEmoji} for Giveaway\n`
                 + `${PollEmoji} for Poll`);
 
-        let messageEmbed = await message.channel.send(embed);      
+        let messageEmbed = await message.channel.send({ embeds: [embed] });      
         messageEmbed.react(GiveawayEmoji);
         messageEmbed.react(PollEmoji);
 
