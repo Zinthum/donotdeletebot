@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES", "MESSAGE", "CHANNEL", "REACTION"]});
+const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES", "CHANNEL", "REACTION"]});
 
 const prefix = '.';
 
