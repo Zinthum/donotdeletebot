@@ -28,10 +28,10 @@ module.exports = {
 
             if (reaction.message.channel.id == channel){
                 if (reaction.emoji.name === GiveawayEmoji){
-                    await reaction.message.guild.members.cache.get(user.id).roles.add(GiveawayRole);
+                    await reaction.message.guild.members.cache.get(user.id).roles.add('877205752165568614');
                 }
                 if (reaction.emoji.name === PollEmoji){
-                    await reaction.message.guild.members.cache.get(user.id).roles.add(PollRole);
+                    await reaction.message.guild.members.cache.get(user.id).roles.add('939600919748804698');
                 }
             } else {
                 return;
@@ -48,10 +48,10 @@ module.exports = {
  
             if (reaction.message.channel.id == channel){
                 if (reaction.emoji.name === GiveawayEmoji){
-                    await reaction.message.guild.members.cache.get(user.id).roles.remove(GiveawayRole);
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove('877205752165568614');
                 }
                 if (reaction.emoji.name === PollEmoji){
-                    await reaction.message.guild.members.cache.get(user.id).roles.remove(PollRole);
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove('939600919748804698');
                 }
             } else {
                 return;
