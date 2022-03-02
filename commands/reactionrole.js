@@ -7,7 +7,7 @@ module.exports = {
         const PollRole = message.guild.roles.cache.find(role => role.name === "Poll");
 
         const GiveawayEmoji = '🌈';
-        const PollEmoji = '⚖️';
+        const PollEmoji = '🎲';
 
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
