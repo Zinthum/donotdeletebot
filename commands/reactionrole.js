@@ -2,7 +2,7 @@ module.exports = {
     name: 'reactionrole',
     description: "Sets up a reaction role message!",
     async execute(message, args, Discord, client){
-        const channel = '<#877205506383573052>';
+        const channel = 'https://discord.com/channels/872787207113572422/940148778839728169';
         const GiveawayRole = message.guild.roles.cache.find(role => role.name === "Giveaway");
         const PollRole = message.guild.roles.cache.find(role => role.name === "Poll");
 
