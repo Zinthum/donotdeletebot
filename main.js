@@ -48,6 +48,11 @@ client.on('message', message =>{
             message.channel.send("You don't have the right permissions to run this command!");
         }
         
+    }else if (command == 'instagram'){
+        message.channel.send('https://www.instagram.com/zinthum_yt/');
+
+    }else if (command == 'ig'){
+        message.channel.send('https://www.instagram.com/zinthum_yt/')
     }
 });
 
