@@ -14,7 +14,9 @@ module.exports = {
     }
 }
 
-Client.on("messageReactionAdd", async (reaction, member, guild, message) => {
+const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
+
+client.on("messageReactionAdd", async (reaction, member, guild, message) => {
     if (reaction.message.partial) await reaction.message.fetch();
   if (reaction.partial) await reaction.fetch();
   if (member.bot) return;
@@ -31,7 +33,7 @@ Client.on("messageReactionAdd", async (reaction, member, guild, message) => {
   }
 });
 
-Client.on("messageReactionRemove", async (reaction, user) => {
+client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.message.partial) await reaction.message.fetch();
     if (reaction.partial) await reaction.fetch();
     if (user.bot) return;
