@@ -15,11 +15,11 @@ for(const file of commandFiles){
     client.commands.set(command.name, command);
 }
 
-client.on('ready', () => {
+client.once('ready', () => {
     console.log("Zinthum's Bot is online!");
 });
 
-client.on('messageCreate', message => {
+client.on('messageCreate', message =>{
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).split(/ + /);
@@ -69,5 +69,11 @@ client.on('messageCreate', message => {
         client.commands.get('reactionrole').execute(message, args, Discord, client);
     }
 });
+
+
+
+
+
+
 
 client.login(process.env.token);
