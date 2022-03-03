@@ -6,6 +6,9 @@ module.exports = {
       const GiveawayRole = message.guild.roles.cache.find(role => role.name === "Giveaway");
       const PollRole = message.guild.roles.cache.find(role => role.name === "Poll");
 
+      const GiveawayEmoji = '🌈';
+      const PollEmoji = '🎲';
+
         let embed = new Discord.MessageEmbed()
            .setColor('#e42643')
            .setTitle('Choose a role to never miss an event!')
