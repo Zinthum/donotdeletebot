@@ -66,7 +66,11 @@ client.on('messageCreate', message =>{
         message.channel.send('https://www.instagram.com/zinthum_yt/')
         
     }else if (command == 'reactionrole'){
-        client.commands.get('reactionrole').execute(message, args, Discord, client);
+        if(message.member.roles.cache.has('872790088818516028')){
+            client.commands.get('reactionrole').execute(message, args, Discord, client);
+        } else {
+            message.channel.send("You don't have the right permissions to run this command!");
+        }
     }
 });
 
