@@ -15,7 +15,7 @@ for(const file of commandFiles){
     client.commands.set(command.name, command);
 }
 
-client.once('ready', () => {
+client.on('ready', () => {
     console.log("Zinthum's Bot is online!");
 });
 
