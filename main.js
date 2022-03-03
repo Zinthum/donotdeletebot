@@ -27,6 +27,7 @@ client.on('messageCreate', message =>{
 
     if(command === 'ping'){
         message.channel.send('pong!');
+        message.delete();
 
     }else if (command == 'youtube'){
         message.channel.send('https://www.youtube.com/channel/UC2ohNPILhIqXCLW9alK1TCQ');
