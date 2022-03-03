@@ -14,7 +14,7 @@ module.exports = {
     }
 }
 
-client.on("messageReactionAdd", async (reaction, member, guild, message) => {
+Client.on("messageReactionAdd", async (reaction, member, guild, message) => {
     if (reaction.message.partial) await reaction.message.fetch();
   if (reaction.partial) await reaction.fetch();
   if (member.bot) return;
@@ -31,7 +31,7 @@ client.on("messageReactionAdd", async (reaction, member, guild, message) => {
   }
 });
 
-client.on("messageReactionRemove", async (reaction, user) => {
+Client.on("messageReactionRemove", async (reaction, user) => {
     if (reaction.message.partial) await reaction.message.fetch();
     if (reaction.partial) await reaction.fetch();
     if (user.bot) return;
