@@ -71,7 +71,11 @@ client.on('messageCreate', message =>{
         } else {
             message.channel.send("You don't have the right permissions to run this command!");
         }
-    }
+
+    }else if (command == 'new'){
+        message.channel.send('https://youtu.be/nNoS57kMBr0');
+
+    }    
 });
 
 
