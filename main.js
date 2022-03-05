@@ -73,7 +73,7 @@ client.on('messageCreate', message =>{
         }
 
     }else if (command == 'new'){
-        message.channel.send('https://youtu.be/BYC23Al679w');
+        message.channel.send('https://youtu.be/ugQ18MEJGJc');
 
     }    
 });
