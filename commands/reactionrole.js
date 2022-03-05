@@ -31,12 +31,12 @@ client.on("messageReactionAdd", async (reaction, member, guild, message) => {
   if (!reaction.message.guilds) return;
   {
     if (reaction.emoji.name === "🌈") {
-      await reaction.message.guilds.members.cache.get(member.id).roles.add("877205752165568614");
+      await reaction.message.guilds.members.cache.get(member.id).roles.add(GiveawayRole);
     }
   }
   {
     if (reaction.emoji.name === "🎲") {
-      await reaction.message.guilds.members.cache.get(member.id).roles.add("939600919748804698");
+      await reaction.message.guilds.members.cache.get(member.id).roles.add(PollRole);
     }
   }
 });
@@ -48,12 +48,12 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (!reaction.message.guilds) return;
   {
       if (reaction.emoji.name === "🌈") {
-        await reaction.message.guilds.members.cache.get(user.id).roles.remove("877205752165568614");
+        await reaction.message.guilds.members.cache.get(user.id).roles.remove(GiveawayRole);
       }
     }
   {
       if (reaction.emoji.name === "🎲") {
-        await reaction.message.guilds.members.cache.get(user.id).roles.remove("939600919748804698");
+        await reaction.message.guilds.members.cache.get(user.id).roles.remove(PollRole);
       }
     } 
   });
