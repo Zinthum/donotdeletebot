@@ -31,12 +31,12 @@ client.on("messageReactionAdd", async (reaction, member, guild, message) => {
   if (!reaction.message.guilds) return;
   {
     if (reaction.emoji.name === "🌈") {
-      await reaction.message.guilds.members.cache.get(member.id).roles.add(GiveawayRole);
+      await channel.reaction.message.guilds.members.cache.get(member.id).roles.add(GiveawayRole);
     }
   }
   {
     if (reaction.emoji.name === "🎲") {
-      await reaction.message.guilds.members.cache.get(member.id).roles.add(PollRole);
+      await channel.reaction.message.guilds.members.cache.get(member.id).roles.add(PollRole);
     }
   }
 });
@@ -48,12 +48,12 @@ client.on("messageReactionRemove", async (reaction, user) => {
     if (!reaction.message.guilds) return;
   {
       if (reaction.emoji.name === "🌈") {
-        await reaction.message.guilds.members.cache.get(user.id).roles.remove(GiveawayRole);
+        await channel.reaction.message.guilds.members.cache.get(user.id).roles.remove(GiveawayRole);
       }
     }
   {
       if (reaction.emoji.name === "🎲") {
-        await reaction.message.guilds.members.cache.get(user.id).roles.remove(PollRole);
+        await channel.reaction.message.guilds.members.cache.get(user.id).roles.remove(PollRole);
       }
     } 
   });
