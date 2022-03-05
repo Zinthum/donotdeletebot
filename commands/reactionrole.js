@@ -12,7 +12,7 @@ module.exports = {
         let embed = new Discord.MessageEmbed()
            .setColor('#e42643')
            .setTitle('Choose a role to never miss an event!')
-           .setDescription('Choosing a role will allow you to never miss any events!\n\n' + `${GiveawayEmoji} for Giveaway\n` + `${PollEmoji} for Poll`);
+           .setDescription('Choosing a role will allow you to never miss any events!\n\n' + `${GiveawayEmoji} Giveaway Ping\n` + `${PollEmoji} Poll Ping`);
         message.delete();
 
         const msg = await message.channel.send({ embeds: [embed] }); 
