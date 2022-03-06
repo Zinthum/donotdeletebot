@@ -22,7 +22,7 @@ module.exports = {
 }
 
 const Discord = require('discord.js');
-const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
+const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES", "MESSAGE", "CHANNEL", "REACTION"]});
 
 client.on("messageReactionAdd", async (reaction, member, guild, message) => {
     if (reaction.message.partial) await reaction.message.fetch();
