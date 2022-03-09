@@ -77,6 +77,9 @@ client.on('messageCreate', message =>{
 
     }else if (command == 'tiktok'){
         message.channel.send('https://www.tiktok.com/@zinthum');
+
+    }else if (command == 'help'){
+        message.channel.send('Current working commands are: **.ping .youtube .yt .owner .hi .rickroll .etps .beef .rip .instagram .ig .new .tiktok');
     }
 });
 
