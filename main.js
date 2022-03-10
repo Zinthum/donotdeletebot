@@ -78,7 +78,7 @@ client.on('messageCreate', message =>{
         }
 
     }else if (command == 'new'){
-        message.channel.send('https://youtu.be/iPBdk0sMA6g');
+        message.channel.send('https://youtu.be/pR3bPp2Sxtk');
 
     }else if (command == 'tiktok'){
         message.channel.send('https://www.tiktok.com/@zinthum');
