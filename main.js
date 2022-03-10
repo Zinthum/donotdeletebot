@@ -3,7 +3,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
 
 client.on("ready", () => {
-    client.user.setPresence({activity: {name: ".help"}})
+    client.user.setPresence({activity: {name: ".help"} })
+
 })
 
 const prefix = '.';
