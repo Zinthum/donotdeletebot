@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
 
-client.user.setActivity("with depression", {
+client.user.setGame("with depression", {
     type: "STREAMING",
     url: "https://www.youtube.com/channel/UC2ohNPILhIqXCLW9alK1TCQ"
 
