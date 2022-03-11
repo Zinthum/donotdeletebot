@@ -2,11 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
 
-client.user.setStatus("with depression", {
-    type: "STREAMING",
-    url: "https://www.youtube.com/channel/UC2ohNPILhIqXCLW9alK1TCQ"
-
-})
+client.user.setStatus("LOL");
 
 const prefix = '.';
 
