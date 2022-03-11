@@ -2,8 +2,9 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
 
-client.on("ready", () => {
-    client.user.setPresence({activity: {name: ".help"} })
+client.user.setActivity("with depression", {
+    type: "STREAMING",
+    url: "https://www.youtube.com/channel/UC2ohNPILhIqXCLW9alK1TCQ"
 
 })
 
