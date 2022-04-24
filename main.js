@@ -43,12 +43,6 @@ client.on('messageCreate', message =>{
     }else if (command == 'rickroll'){
         message.channel.send('https://youtu.be/dQw4w9WgXcQ');
 
-    }else if (command == 'etps'){
-        message.channel.send('discord.gg/etps');
-
-    }else if (command == 'beef'){
-        message.channel.send('discord.gg/beef');
-
     }else if (command == 'rip'){
         message.channel.send('💀⚰️🪦');
 
@@ -79,7 +73,7 @@ client.on('messageCreate', message =>{
         message.channel.send('https://www.tiktok.com/@zinthum');
 
     }else if (command == 'help'){
-        message.channel.send("Current working commands are: **.ping .youtube .yt .owner .hi .rickroll .etps .beef .rip .instagram .ig .new .tiktok**");
+        message.channel.send("Current working commands are: **.ping .youtube .yt .owner .hi .rickroll .rip .instagram .ig .new .tiktok**");
     }
 });
 
